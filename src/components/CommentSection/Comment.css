@@ -5,22 +5,33 @@
 }
 .comment {
   font-size: 16px;
+
 }
 .comment-form  {
   margin: 10px 0;
-  width: 100%;
+  min-width: 100%;
 }
-.comment-form input {
-  width: 100%;
+.comment-form input[type="text"] {
+  width: 95%;
+  margin-left: -4%;
   font-size: 14px;
   padding: 10px;
   border: none;
   border-top: 1px solid #efefef;
   color: #999;
 }
+.comment-form input[type="text"]:focus {
+  border: 1px solid black;
+}
 .user {
   font-size: 14px;
   margin-left: 5px;
   color: black;
   font-weight: bold;
+}
+.comment-form input[type="button"] {
+  margin-left: -40px;
+  background-image: url('../../assets/open-menu.png');
+  border: none;
+  background-color: transparent;
 }
